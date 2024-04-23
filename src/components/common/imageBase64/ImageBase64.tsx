@@ -3,7 +3,7 @@ import thumbDefault from '../../../assets/thumb-default.jpg'
 
 
 interface IImageBase64 extends ImgHTMLAttributes<HTMLImageElement> {
-    src: string
+    src?: string
 }
 
 export function ImageBase64({ src, ...rest }: IImageBase64) {

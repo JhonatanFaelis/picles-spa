@@ -6,7 +6,7 @@ interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
     textButton?: string;
 }
 
-export function Button({ textButton = 'Botão' ,variant = ButtonVariant.Default, children, ...rest }: IButton) {
+export function Button({ variant = ButtonVariant.Default, children, ...rest }: IButton) {
     let buttonClass = styles.buttonBase
     switch (variant) {
         case ButtonVariant.Default:
@@ -25,7 +25,7 @@ export function Button({ textButton = 'Botão' ,variant = ButtonVariant.Default,
     return <>
 
         <button className={buttonClass} {...rest}>
-            {textButton}
+            {children}
         </button>
     </>
 }

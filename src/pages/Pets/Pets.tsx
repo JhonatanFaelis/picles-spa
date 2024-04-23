@@ -88,7 +88,7 @@ export function Pets() {
                                 </div>
                             ))}
                         </div>
-                        <Button type='submit' variant={isButtonEnabled ? ButtonVariant.Default : ButtonVariant.Disabled} textButton="Buscar" />
+                        <Button type='submit' variant={isButtonEnabled ? ButtonVariant.Default : ButtonVariant.Disabled}>Buscar</Button>
                     </form>
                     {
                         usePetLists.isLoading && (
