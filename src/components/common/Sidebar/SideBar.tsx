@@ -6,13 +6,15 @@ import { useShelter } from '../../../hooks/useShelter';
 
 
 export default function SideBar() {
+
     const { data } = useShelter();
 
     function validate(event: React.MouseEvent) {
-        const canAccess = !!data?.shleterWhatsApp
-        event.preventDefault();
-
+         
+        const canAccess = !!data?.shelterWhatsApp
+        
         if (!canAccess) {
+            event.preventDefault();
             toast.error("Insira os dados do abrigo!")
         }
     }
