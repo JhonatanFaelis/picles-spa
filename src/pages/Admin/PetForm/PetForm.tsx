@@ -58,7 +58,7 @@ export function PetForm() {
 
     try {
         const{id} = await addPet({name, type, size, gender, bio})
-
+        console.log(id);
         toast.success(MESSAGE_BY_STATUS[status].sucess,{
             id : toastId,
         })
