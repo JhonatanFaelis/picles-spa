@@ -83,7 +83,7 @@ export function Pets() {
                     <form action="" className={styles.filters} onSubmit={applyFilters} onChange={checkButtonStatus}>
                         <div className={styles.columns}>
                             {filterColumns.map((filter) => (
-                                <div key={filter.name} className={styles.column}>   
+                                <div key={filter.name} className={styles.column}>
                                     <Select defaultValue={urlParams[filter.name]} label={filter.title} options={filter.options} name={filter.name} />
                                 </div>
                             ))}
@@ -97,7 +97,7 @@ export function Pets() {
                     }
                     <main className={styles.list}>
                         {
-                            usePetLists.data?.items.map((pet) => (
+                            usePetLists.data?.items && usePetLists.data.items.map((pet) => (
                                 <Card
                                     key={pet.id}
                                     href={`/pets/${pet.id}`}
@@ -105,6 +105,7 @@ export function Pets() {
                                     thumb={pet.photo} />
                             ))
                         }
+
 
                     </main>
                     {
