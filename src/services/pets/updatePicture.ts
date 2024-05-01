@@ -1,4 +1,4 @@
-import { AddPetRequest, IPets } from '../../interfaces/pets'
+import { IPets } from '../../interfaces/pets'
 import httpClient from '../api/httpClient'
 
 export async function updatePicture(petId : string, form : FormData): Promise<IPets>{

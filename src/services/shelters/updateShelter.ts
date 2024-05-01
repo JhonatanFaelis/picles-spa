@@ -1,4 +1,4 @@
-import { IShelter, IUpdateShelterRequest, IUpdateShelterResponse } from "../../interfaces/shelter";
+import { IUpdateShelterRequest, IUpdateShelterResponse } from "../../interfaces/shelter";
 import httpClient from '../api/httpClient'
 
 export async function updateShelter(params: IUpdateShelterRequest): Promise<IUpdateShelterResponse> {

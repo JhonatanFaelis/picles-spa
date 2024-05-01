@@ -1,4 +1,4 @@
-import { Link, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { Header } from "../../components/common/Header/Header";
 import { Grid } from "../../components/layout/Grid/Grid";
 import styles from './Pets.module.css'
